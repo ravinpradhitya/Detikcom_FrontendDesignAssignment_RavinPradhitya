@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="bg-primary box-border fixed top-0 flex justify-between items-center"
+style="width: 100vw; padding: 15px 100px; z-index: 9999;">
+<a href="./">
+  <img src="image/navbar/NavbarBrand.png" class="max" alt=""/>
+</a>
+  <ul class="flex gap-8 list-none">
+    <li>
+      <a href="#about" class="text-white p-2.5 font-semibold text-sm font-body">About</a>
+    </li>
+    <li>
+      <a href="#mechanism" class="text-white p-2.5 font-semibold text-sm font-body">Mechanism</a>
+    </li>
+    <li>
+      <a href="#aggregator" class="text-white p-2.5 font-semibold text-sm font-body">Latest Update</a>
+    </li>
+    <li>
+      <a href="./register.html" class="text-primary py-2.5 px-8 font-semibold text-sm bg-white font-body" style="border-radius: 100px;">Register</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Register -->
+<section class="bg-background bg-top bg-no-repeat flex flex-col justify-center items-center p-52 gap-12"
+style="background-image: url('image/register/header.png'); background-size: 100%;">
+    <h1 class="font-body text-white text-5xl font-bold">Registrasi</h1>
+    <form class="bg-white flex flex-col gap-5 px-5 py-8 rounded-2xl" style="height: 900px; width: 640px;" action="">
+      <input class="w-full p-5 bg-form border-none rounded-lg font-body text-xs placeholder-black" type="text" name="name" placeholder="Nama Perusahaan" value="" />
+      <input class="w-full p-5 bg-form border-none rounded-lg font-body text-xs placeholder-black" type="text" name="email" placeholder="Email" value="" />
+      <div class="input-with-note">
+        <input class="w-full p-5 bg-form border-none rounded-lg font-body text-xs placeholder-black" type="number" placeholder="Nomor Telepon" value="" />
+        <p class="font-body text-xs text-gray-400">Isi hanya angka</p>
+      </div>
+      <textarea class="w-full p-5 bg-form border-none rounded-lg font-body text-xs placeholder-black" name="" id="" cols="30" rows="10" placeholder="Tentang Perusahaan (Max. 200 character)"></textarea>
+      
+      <div class="flex list-inside items-center gap-10">
+        <div class="w-52 h-52 bg-form flex justify-center items-center flex-col cursor-pointer hover:bg-blue-100" style="transition: background-color 0.3s ease;">
+          <input type="file" accept="image/*" hidden/>
+          <button>
+            <img src="./image/register/upload_logo.svg" alt="" />
+          </button>
+          <label class="text-xs font-normal font-body relative top-1/4">Upload file logo*</label>
+        </div>
+        <ol class="font-body">
+          <li class="text-xs font-normal leading-3 list-decimal">Format file: .png, .jpg, .jpeg</li>
+          <li class="text-xs font-normal leading-3 list-decimal">Maksimal ukuran file 200KB</li>
+          <li class="text-xs font-normal leading-3 list-decimal">Hindari penggunaan logo berwarna putih</li>
+          <li class="text-xs font-normal leading-3 list-decimal">Minimal lebar 300px</li>
+        </ol>
+      </div>
+      <div>
+        <div class="flex justify-between items-center bg-form pl-5 rounded-lg cursor-pointer">
+          <input class="flex-col w-full p-6 gap-8 bg-form border-none rounded-lg font-body"
+            type="file"
+            placeholder="Profil Perusahaan atau Deck (opsional)"
+            id="company-profile-input"
+            hidden
+          />
+          <label class="font-body text-xs font-normal" for="company-profile-input"
+            >Profil Perusahaan atau Deck (opsional)</label
+          >
+          <button class="font-body font-bold text-white bg-primary py-5 px-14 rounded-lg hover:bg-secondary" style="transition: background-color 0.3s ease;">Upload File</button>
+        </div>
+        <p class="font-body text-xs text-gray-400">Format file .pdf , maksimal size 20mb</p>
+      </div>
+      <div>
+        <input class="text-xs w-full p-5 bg-form border-none rounded-lg font-body placeholder-black" type="text" name="" id="" placeholder="Link website"/>
+        <p class="font-body text-xs text-gray-400">Website, Sosial Media, dll. Sertakan protokol URL (https:// atau http://).</p>
+      </div>
+      <label class="text-xs font-body flex items-center gap-0.5">
+        <input class="w-full p-5 bg-form border-none rounded-lg font-body" style="width: auto;" type="checkbox" />
+        <span class="checkmark"></span>
+        Dengan menekan tombol "Daftar", Saya menyetujui syarat dan ketentuan
+        yang berlaku
+      </label>
+      <button class="font-body font-bold text-white bg-primary py-5 px-14 w-64 self-center rounded-lg hover:bg-secondary" style="transition: background-color 0.3s ease;">Register</button>
+    </form>
+  </section>
+
+<!-- Footer -->
+<footer class="bg-primary flex flex-col gap-5"
+style="padding: 30px 50px;">
+  <img src="./image/footer/logo.svg" class="w-64" />
+  <div class="flex justify-between">
+    <p class="text-white text-sm font-semibold font-body leading-4" style="max-width: 60%;">
+      Detikfinance memberikan ruang kepada para startup di Indonesia untuk
+      menunjukkan, serta mempromosikan brand mereka untuk mendapatkan
+      perhatian dari venture capital atau angel investor
+    </p>
+    <div class="flex justify-end gap-8">
+      <img src="./image/footer/twitter.svg" class="w-5" />
+      <img src="./image/footer/instagram.svg" class="w-5" />
+      <img src="./image/footer/facebook.svg" class="w-5" />
+    </div>
+  </div>
+  <hr/>
+  <span class="text-white text-xs font-normal font-body">© 2023 Detikcom. All rights reserved</span>
+</footer>
+</body>
+</html>
